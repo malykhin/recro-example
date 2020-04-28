@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_bar > a {
+  margin-left: 8px;
+}
