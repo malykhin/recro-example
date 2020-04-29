@@ -10,7 +10,7 @@ function handleEvent(e) {
   const { width, height } = el.getBoundingClientRect()
 
   el.innerHTML = `payload: ${e.data.payload}, consumer: ${e.data.consumer}`
-  clientMessages.generateResizeMessage(width, height)
+  clientMessages.resize(width, height)
 
   if (e.data.channel === 'NAVIGATION_CHANGE') {
     const data = JSON.parse(e.data.payload)
@@ -27,8 +27,8 @@ window.addEventListener(
     document.body.style.height = 50
     const { width, height } = document.body.getBoundingClientRect()
 
-    clientMessages.generateReady()
-    clientMessages.generateResizeMessage(width, height)
+    clientMessages.ready()
+    clientMessages.resize(width, height)
   },
   false,
 )

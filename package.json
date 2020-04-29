@@ -6,17 +6,20 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "recro": "^0.1.4"
+    "recro": "^0.1.6"
   },
   "scripts": {
+    "install:all": "npm install --prefix ./micros/react-app & npm install --prefix ./micros/vanilla-app & npm install",
+    "start:all": "npm run start:config:server & npm run start --prefix ./micros/vanilla-app & npm run start --prefix ./micros/react-app & npm run start",
+    "link:all": "npm link recro && cd ./micros/vanilla-app && npm link recro && cd ../react-app && npm link recro",
     "start": "react-scripts start",
-    "start:all": "npm run start --prefix ./micros/vanilla-app & npm run start --prefix ./micros/react-app & npm run start",
-    "install:all": "npm install --prefix ./micros/react-app & npm install --prefix ./micros/vanilla-app & npm install"
+    "start:config:server": "node ./configuration-server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.0"
   }
 }

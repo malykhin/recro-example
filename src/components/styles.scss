@@ -1,0 +1,75 @@
+.frame {
+  width: 100%;
+  z-index: -1;
+}
+
+.frame_wrapper {
+  position: relative;
+  width: 45vw;
+}
+
+.frame_insert {
+  width: 45vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shifted {
+  height: 100%;
+}
+
+.app_pretty_wrapper {
+  font-family: GloriaHallelujah-Regular;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.frame_title {
+  text-align: center;
+  font-size: 52px;
+}
+
+.link {
+  font-family: GloriaHallelujah-Regular;
+  font-size: 32px;
+  color: #1e90ff;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #dc143c;
+}
+
+.active {
+  color: #dc143c;
+}
+
+.trigger {
+  font-family: GloriaHallelujah-Regular;
+  font-size: 32px;
+  margin-left: 64px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.trigger:hover {
+  color: #1e90ff;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 9;
+  top: 20vh;
+  left: calc((100vw - 40vw) / 2);
+
+  & iframe {
+    width: 50vw;
+    height: 30vw;
+  }
+}

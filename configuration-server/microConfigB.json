@@ -1,0 +1,4 @@
+[
+  { "name": "app-a", "src": "http://localhost:3001" },
+  { "name": "app-b", "src": "http://localhost:3002" }
+]

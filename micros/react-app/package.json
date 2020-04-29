@@ -10,7 +10,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "recro": "^0.1.4"
+    "recro": "^0.1.6"
   },
   "scripts": {
     "start": "BROWSER=none PORT=3001 react-scripts start",

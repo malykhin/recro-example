@@ -1,18 +1,13 @@
+@font-face {
+  font-family: GloriaHallelujah-Regular;
+  src: url('./fonts/GloriaHallelujah-Regular.ttf');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-iframe,
-iframe:focus {
-  border: none;
-  width: 23vw;
-  height: 23vh;
+  background-color: #f0f8ff;
 }

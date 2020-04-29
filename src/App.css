@@ -1,11 +1,31 @@
 .app {
-  display: flex;
-  width: 100vw;
   height: 100vh;
-  justify-content: space-around;
-  align-items: center;
 }
 
-.nav_bar > a {
-  margin-left: 8px;
+.micros {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.frame_container {
+  width: 40vw;
+}
+
+#app-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+iframe,
+iframe:focus {
+  border: none;
+  width: 30vw;
+  height: 55%;
 }
